@@ -43,9 +43,9 @@ const createHandLandmarker = async () => {
     ml5.setBackend("webgl");
     nn = ml5.neuralNetwork({ task: 'classification', debug: true })
     const modelDetails = {
-        model: 'public/model/model.json',
-        metadata: 'public/model/model_meta.json',
-        weights: 'public/model/model.weights.bin'
+        model: 'model/model.json',
+        metadata: 'model/model_meta.json',
+        weights: 'model/model.weights.bin'
     }
     nn.load(modelDetails, () => console.log("het model is geladen!"))
 
