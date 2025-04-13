@@ -120,7 +120,7 @@ function setLetter(){
 
     chosenLetter = letters[randNum]
 
-    requestedLetter.textContent = `Please make the gesture for: "${chosenLetter}"`
+    requestedLetter.textContent = `Maak het gebaar voor: "${chosenLetter}"`
 }
 
 function checkLetter(poseLetter){
@@ -131,7 +131,7 @@ function checkLetter(poseLetter){
         dataOutput.classList.add("correct");
         setLetter();
     } else {
-        dataOutput.textContent = `Incorrect, You made the gesture for "${poseLetter}". We expected "${chosenLetter}"`;
+        dataOutput.textContent = `Incorrect, Je maakte het gebaar voor: "${poseLetter}", in plaats van: "${chosenLetter}"`;
         dataOutput.classList.add("incorrect");
     }
 }
