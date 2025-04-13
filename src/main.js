@@ -127,7 +127,7 @@ function checkLetter(poseLetter){
     dataOutput.classList.remove("correct", "incorrect");
 
     if (poseLetter === chosenLetter){
-        dataOutput.textContent = "Correct";
+        dataOutput.textContent = "Correct!";
         dataOutput.classList.add("correct");
         setLetter();
     } else {
