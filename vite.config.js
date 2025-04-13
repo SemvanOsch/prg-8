@@ -1,5 +1,12 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
+
+/** @type {import('vite').UserConfig} */
 
 export default defineConfig({
-  base: '/prg-8/',
-})
+  base: "./",
+
+  build: {
+    outDir: '/docs',
+    emptyOutDir: true, // empty the build dir before new build
+  }
+});
