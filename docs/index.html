@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handgebaren Checker</title>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+  <script type="module" crossorigin src="/prg-8/assets/index-BGVITQYI.js"></script>
+  <link rel="stylesheet" crossorigin href="/prg-8/assets/index-CMIgf2j2.css">
+</head>
+
+<body>
+<section>
+  <h1>Handgebaren Checker</h1>
+  <h2 id="requestedLetter">Wacht op model...</h2>
+
+  <div class="videoView">
+    <div style="position: relative;">
+      <video id="webcam" muted autoplay playsinline></video>
+      <canvas id="output_canvas"></canvas>
+      <div id="myimage"></div>
+    </div>
+  </div>
+
+  <div class="button-group">
+    <button id="webcamButton">Start Webcam</button>
+    <button id="checkButtonNn">Controleer Gebaar</button>
+  </div>
+
+  <div id="dataOutput"></div>
+</section>
+</body>
+
+</html>
